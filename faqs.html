@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+</head>
+<body class="font-domine">
+   <header class="sticky top-0 z-20  bg-purple-100 text-purple-800 w-full h-12 md:h-auto dark:bg-slate-800 shadow-md dark:shadow-zinc-700">
+        <div class="flex flex-row justify-between md:items-end px-5 md:px-100 py-2">
+            <div class="md:hidden">
+                
+                <ion-icon name="menu-outline"></ion-con>
+            </div>
+            <div class="relative" >
+                <a href="index.html">
+                    <div class="absolute top-0 z-10 h-16 w-16 md:h-24 md:w-24 rounded-full outline-4 outline-dotted outline-purple-700 animate-rotating duration-500 ease-out hover:animate-none cursor-pointer">
+                    </div>
+                    <img src="./src/images/logo.png" class="h-16 w-24 md:h-24 md:24 z-20" alt="logo" srcset="">
+                </a>
+            </div>
+            <div class="flex items-start md:items-center">
+                <div class="hidden md:grid grid-cols-6 gap-x-10 grow items-stretch place-content-center justify-items-center px-5 max-w-7xl dark:text-white ">
+                    <a href="index.html">
+                        <div >
+                            Home
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div>
+                            Menus
+                        </div>
+                    </a>
+                    <a href="gallery.html">
+                        <div>
+                            Gallery
+                        </div>
+                    </a>
+                    <a href="blogs.html">
+                        <div>
+                            Blogs
+                        </div>
+                    </a>
+                    <a href="faqs.html">
+                        <div class="border-b-4 border-purple-400">
+                            Faq
+                        </div>
+                    </a>
+                    <a href="contacts.html">
+                        <div>
+                            Contacts
+                        </div>
+                    </a>
+
+                </div>
+                <div class="w-5 h-5">
+                    <div id="light" class=" cursor-pointer place-self-center dark:text-white" title="Normal Mode" onclick="changeTheme('light')">
+                        <ion-icon name="sunny-outline"></ion-icon>
+                    </div>
+                    <div id="dark" class="hidden cursor-pointer place-self-center" title="Dark mode" onclick="changeTheme('dark')">
+                        <ion-icon name="moon"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </header>
+   <main>
+    <section class="bg-[#1D1D1D] text-gray-100 py-32 min-h-screen">
+        <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+          <h2 class="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">Frequently Asked Questions</h2>
+          <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">How can I place an order?</summary>
+              <div class="px-4 pb-4">
+                <p>You can easily place an order on our website by browsing our product catalog, selecting the items you want, and adding them to your cart. Then, proceed to checkout, where you can provide your shipping and payment information to complete the order.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What payment methods do you accept?</summary>
+              <div class="px-4 pb-4">
+                <p>We accept various payment methods, including credit cards, debit cards, net banking, and mobile wallet payments. You can choose the payment option that is most convenient for you during the checkout process.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">How long does shipping take?</summary>
+              <div class="px-4 pb-4">
+                <p>Shipping times may vary depending on your location and the shipping method chosen. Typically, orders are processed within 1-2 business days, and delivery can take 3-7 business days within India. You will receive a tracking notification once your order is shipped.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">Can I return a product if I'm not satisfied?</summary>
+              <div class="px-4 pb-4">
+                <p>Yes, we have a hassle-free return policy. If you are not satisfied with your purchase, you can initiate a return within 30 days of receiving the product. Please contact our customer support at <a href="" class="underline">example@gmail.com</a> for assistance.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">Do you offer international shipping?</summary>
+              <div class="px-4 pb-4">
+                <p>Currently, we only provide shipping services within India. However, we may consider expanding our shipping options to international locations in the future. Please stay updated with our website for any changes in shipping destinations.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What is your customer support contact?</summary>
+              <div class="px-4 pb-4">
+                <p>If you have any questions, concerns, or need assistance, you can reach our customer support team at 9911083755 during our business hours, Monday to Saturday from 10 am to 6 pm. You can also contact us via email at <a href="" class="underline">example@gmail.com</a>.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What are your terms and conditions?</summary>
+              <div class="px-4 pb-4">
+                <p>You can find our detailed terms and conditions by visiting our 
+                  <a href="" class="underline">Terms of Service</a> 
+                  page on our website. It includes information about our policies, user guidelines, and more.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+      
+   </main>
+   <script>
+    let lightIcon = document.getElementById('light')
+    let darkIcon = document.getElementById('dark')
+    changeTheme(localStorage.theme)
+    function changeTheme(theme){
+        if(theme === "light"){
+            document.documentElement.classList.remove('dark')
+            lightIcon.classList.add('hidden')
+            darkIcon.classList.remove('hidden')
+        }else if(theme === 'dark'){
+            document.documentElement.classList.add('dark')
+            lightIcon.classList.remove('hidden')
+            darkIcon.classList.add('hidden')
+        }
+        localStorage.setItem('theme', theme)
+    }
+</script>
+</body>
+</html>

@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins : ['Poppins', 'Sans-serif']
+        domine : ['Domine', 'Sans-serif']
       },
       animation : {
         'rotating' : 'rotating 5s linear infinite'
